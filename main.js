@@ -105,10 +105,10 @@ getSurahs()
 function getSurahs()
 {
     //fetch Surahs meta data {Name of SuraHS}
-    fetch("http://api.alquran.cloud/v1/meta")
+    fetch("https://quran-endpoint.vercel.app/quran")
     .then(response => response.json())
     .then(data=>{
-        let surahs = data.data.surahs.references;
+        let surahs = data.data;
         let numberOfSurahs = 114;
         SurahsContainer.innerHTML = "";
         for (let i = 0; i < numberOfSurahs ; i++) {
@@ -116,17 +116,18 @@ function getSurahs()
             SurahsContainer.innerHTML += 
                 `
                     <div class="surah">
-                        <p>${surahs[i].name}</p>
-                        <p>${surahs[i].englishName}</p>
+                        <p>${surahs[i].asma.ar.short}</p>
+                        <p>${surahs[i].asma.en.short}</p>
                     </div>
                 `
         }
+
         let SurahsTitels = document.querySelectorAll('.surah');
         let popup = document.querySelector('.surah-popup'),
             AyatContainer = document.querySelector('.ayat');
         SurahsTitels.forEach((title,index)=>{
             title.addEventListener('click',()=>{
-                fetch(`http://api.alquran.cloud/v1/surah/${index + 1}`)
+                fetch(`https://api.alquran.cloud/v1/surah/${index + 1}`)
                 .then(response => response.json())
                 .then(data=>{
                     AyatContainer.innerHTML = "";
@@ -161,7 +162,7 @@ let cards = document.querySelector('.cards');
 getPrayTimes();
 function getPrayTimes()
 {
-    fetch("http://api.aladhan.com/v1/timingsByCity?city=cairo&country=egypt&method=8")
+    fetch("https://api.aladhan.com/v1/timingsByAddress/14-08-2022?address=Cairo,EGY&method=8")
     .then(response => response.json())
     .then(data =>{
         let times = data.data.timings;
@@ -214,3 +215,27 @@ $(document).ready(function(){
 
 //*End Active SideBar
 // *------------------------------------------------------
+
+
+
+// fetch("https://api.aladhan.com/v1/calendar?latitude=30.007413&longitude=31.4913182&method=1&timezonestring=Africa/Cairo")
+//     .then(response => response.json())
+//     .then(data=>{
+//         let allData = data.data;
+//         console.log(allData)
+        
+//     })
+
+
+
+
+// fetch("https://api.aladhan.com/v1/timingsByAddress/14-08-2022?address=Cairo,EGY&method=8")
+// .then(response => response.json())
+// .then(data=>{
+//     let allTimes =data.data.timings;
+//     console.log(allTimes)
+//     for(let time in allTimes){
+//         console.log(allTimes[time])
+//     }
+    
+// })
