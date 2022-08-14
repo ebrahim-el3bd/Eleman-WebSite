@@ -1,211 +1,75 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع الايمان ويب</title>
-    <link rel="stylesheet" href="./fonts/all.min.css">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- !------------------------------------------------------------------------------- -->
-<!-- ! Start Header [1] -->
-
-   <header class="header">
-       <div class="container">
-           <div class="logo">موقع الايمان ويب</div>
-           <ul>
-               <li data-filter="main" class="active">الصفحة الرئيسية</li>
-               <li data-filter="hadith">أحاديث</li>
-               <li data-filter="lectures">محاضرات</li>
-               <li data-filter="quran">الْقُرْآن الْكَرِيْم</li>
-               <li data-filter="pray">أوقات الصلاة</li>
-               <li data-filter="footer">تواصل معنا</li>
-           </ul>
-           <div class="bars">
-               <i class="fas fa-bars"></i>
-           </div>
-       </div>
-   </header>
-<!-- ! End Header [1] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!End Main [2] -->
-   <section class="main">
-       <div class="container">
-           <div class="title">
-               <h2>
-                    مرحبا بك في 
-                    <br>
-                   موقع الايمان ويب 
-               </h2>
-               <button class="btn">
-                    إبدأ التصفح
-                    <i class="fas fa-caret-left"></i>
-               </button>
-           </div>
-       </div>
-   </section>
-<!--!End Main [2] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!Start Hadith [3] -->
-   <section class="hadith">
-        <h3>أحاديث</h3>
-        <div class="container">   
-            <div class="hadithContainer">
-              
-            </div>
-            <div class="buttons">
-                <div class="prev">السابق</div>
-                <div class="number">1 / 300</div>
-                <div class="next">التالي</div>
-            </div>
-        </div>
-   </section>
-<!--!End Hadith [3] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!Start lectures Section[4] -->
-    <section class="lectures">
-        <h3>محاضرات</h3>
-        <div class="container">
-            <div class="lectures-container">
-                <div class="right">
-                    <div class="lec">
-                        <div class="lec-text">
-                            <h4>لماذا نزل القران عربيا </h4>
-                            <p>محاضرة رائعة من تقديم فضيلة الشيخ الشعراوي</p>
-                        </div>
-                        <img src="./images/sha.jpg" alt="">
-                    </div>
-                    <div class="lec">
-                        <div class="lec-text">
-                            <h4>لماذا نزل القران عربيا </h4>
-                            <p>محاضرة رائعة من تقديم فضيلة الشيخ الشعراوي</p>
-                        </div>
-                        <img src="./images/sha.jpg" alt="">
-                    </div>
-                    <div class="lec">
-                        <div class="lec-text">
-                            <h4>لماذا نزل القران عربيا </h4>
-                            <p>محاضرة رائعة من تقديم فضيلة الشيخ الشعراوي</p>
-                        </div>
-                        <img src="./images/sha.jpg" alt="">
-                    </div>
-                    <div class="lec">
-                        <div class="lec-text">
-                            <h4>لماذا نزل القران عربيا </h4>
-                            <p>محاضرة رائعة من تقديم فضيلة الشيخ الشعراوي</p>
-                        </div>
-                        <img src="./images/sha.jpg" alt="">
-                    </div>
-                </div>
-                <div class="left">
-                    <iframe src="https://www.youtube.com/embed/dxYaWgv27XI" frameborder="0"></iframe>
-                    <p>أشهر 40 خطأ شائع في الصلاة في 3 دقايق | ياسر ممدوح | Yasser Mamdouh</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--!End lectures Section[4] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!Start Section El-Quran[5] -->
-    <section class="quran">
-        <h3>الْقُرْآن الْكَرِيْم</h3>
-        <div class="container">
-            <div class="surhasContainer">
-                
-            </div>
-        </div>
-    </section>
-    <!-- End of Quran Section -->
-    <!-- Pray Time Section -->
-    <section class="pray">
-        <h3>أوقات الصلاة</h3>
-        <div class="container">
-            <div class="cards">
-                <div class="card">
-                   <div class="circle">
-                        <svg>
-                            <Circle cx="100" cy = "100" r ="100"></Circle>
-                        </svg>
-                        <div class="praytime">2:30</div>
-                   </div>
-                   <p>Sunset</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--!End Section El-Quran[5] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!Start footer[6] -->
-    <section class="footer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path  fill-opacity="1" d="M0,32L48,42.7C96,53,192,75,288,69.3C384,64,480,32,576,42.7C672,53,768,107,864,106.7C960,107,1056,53,1152,48C1248,43,1344,85,1392,106.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-        <div class="social">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-telegram-plane"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-        </div>
-    </section>
-<!--!End footer[6] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!Start surah-popup[7] -->
-    <div class="surah-popup ">
-        <div class="close-popup">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="ayat">
-            
-        </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking BoxIcon for Icon -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="loading">
+      <svg class="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+          </linearGradient>
+        </defs>
+        <circle class="pl__ring" r="56" cx="64" cy="64" fill="none" stroke="hsla(0,10%,10%,0.1)" stroke-width="16" stroke-linecap="round" />
+        <path class="pl__worm" d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z" fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="44 1111" stroke-dashoffset="10" />
+      </svg>
     </div>
-<!--!End surah-popup [7] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!Start scrollBtn[8] -->
-    <div class="scrollBtn">
-        <i class="fas fa-angle-double-up"></i>
+    <div class="layer">
+    <video autoplay loop class="back-video" muted plays-inline>
+      <source src="video/video.mp4">
+    </video>
     </div>
-    <!--!End scrollBtn[8] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-
-
-
-
-<!-- !------------------------------------------------------------------------------- -->
-<!--!Start Loading[9] -->
-<div class="loading">
-    <p>الايمان ويب</p>
-    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-</div>
-
-
-<!--!End Loading[9] -->
-<!-- !------------------------------------------------------------------------------- -->
-
-
-<!-- !------------------------------------------------------------------------------- -->
-
-   <script src="./fonts/all.min.js"></script>
-   <script src="jquery-3.6.0.min.js"></script>
-   <script src="./main.js"></script>
-</body>
+    <div class="wrapper">
+      <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Enter city name" required>
+          <div class="separator"></div>
+          <button>Get Device Location</button>
+        </div>
+      </section>
+      <section class="weather-part">
+        <img src="" alt="Weather Icon">
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+          <i class='bx bx-map'></i>
+          <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class='bx bxs-thermometer'></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2">_</span>
+                <span class="deg">°</span>C
+              </div>
+              <p>Feels like</p>
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class='bx bxs-droplet-half'></i>
+            <div class="details">
+              <span>_</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
